@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Spam Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Email Spam Detector</h1>
+            <p>Paste your email content below to check if it's spam. Powered by simple keyword analysis.</p>
+        </header>
+
+        <main>
+            <form id="spamForm">
+                <textarea id="emailContent" placeholder="Paste the full email body here..." rows="10" required></textarea>
+                <button type="submit">Detect Spam</button>
+            </form>
+
+            <div id="result" class="result hidden">
+                <h2>Result:</h2>
+                <p id="prediction"></p>
+                <p id="confidence"></p>
+                <details>
+                    <summary>Why this result?</summary>
+                    <p id="explanation"></p>
+                </details>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Email Spam Detector. For educational purposes. Use a real ML model for accuracy.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
